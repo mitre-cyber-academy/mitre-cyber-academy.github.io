@@ -1,40 +1,53 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Beep boopp</title>
-        <meta name="viewport" content="width=device-width">
-
- 
+        <title>MITRE Cyber Academy | Welcome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MITRE Cyber Academy Frontpage">
+        <meta name="author" content="MCA Staff">
+        <title>{{ page.title }}</title>
+        <link href="{{site.baseurl}}css/main.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ site.baseurl }}img/favicon.ico">        
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="{{ site.baseurl }}css/font-awesome-ie7.min.css">
+        <![endif]-->
+        <!-- Scripts START -->
+        <script src="{{ site.baseurl }}js/jquery-1.7.2.min.js"></script>
+        <script src="{{ site.baseurl }}js/bootstrap.min.js"></script>
+        <!-- Scripts END-->
 
     </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title">Hello, I am part of the _layout</h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
+<body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="/">MITRE Cyber Academy</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="/about"><i class="icon-info-sign icon-white"></i> About</a></li>
+                        <li><a href="/contact"><i class="icon-globe icon-white"></i> Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
         </div>
-
-    </body>
+    </div>
+    {{ content }}
+    <div class="well footer">
+        <div class="container">
+            <div class="row-fluid">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p><a href="http://www.mitre.org">MITRE</a> Cyber Academy</p>
+                <p>Copyright &copy 2014 The MITRE Corporation</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
