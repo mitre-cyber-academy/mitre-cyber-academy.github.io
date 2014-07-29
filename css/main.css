@@ -3,4 +3,5 @@
 {% include css/bootstrap.css %}
 {% include css/bootstrap-responsive.css %}
 {% include css/customcss.css %}
+{% include css/sticky-footer.css %}
 {% include css/font-awesome.min.css %}

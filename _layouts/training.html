@@ -1,0 +1,59 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="MITRE Cyber Academy Frontpage">
+        <meta name="author" content="MCA Staff">
+        <title>{{ page.title }}</title>
+        <link href="{{site.baseurl}}training/css/main.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ site.baseurl }}img/favicon.ico">        
+        <!--[if IE 7]>
+    <link rel="stylesheet" href="{{ site.baseurl }}css/font-awesome-ie7.min.css">
+    <![endif]-->
+        <!-- Scripts START -->
+        <script src="{{ site.baseurl }}js/jquery-1.7.2.min.js"></script>
+        <script src="{{ site.baseurl }}js/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}js/sticky-footer.js"></script>
+        <!-- Scripts END-->
+        
+    </head>
+<body>
+    <header role="banner" class="navbar navbar-inverse navbar-fixed-top">
+        <nav role="navigation" class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="../index.html">MITRE Cyber Academy</a>
+                <div class=nav-collapse>
+                    <ul class="nav">
+                        <li><a href="../"><i class="icon-home icon-white"></i> Home</a></li>
+                        <li><a href="../about"><i class="icon-info-sign icon-white"></i> About</a></li>
+                        <li><a href="../contact"><i class="icon-globe icon-white"></i> Contact</a></li>
+                    </ul>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <div id="page" class="container-fluid">
+        {{ content }}
+
+      
+    
+    </div>
+    <footer id="page-footer">
+        <div class="container-fluid">
+            <p class="helplink"></p>
+            <p><a href="http://www.mitre.org">MITRE</a> Cyber Academy</p>
+            <p>Copyright &copy 2014 The MITRE Corporation</p>
+        </div>
+    </footer>
+</body>
+</html>
