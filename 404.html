@@ -1,11 +1,57 @@
-﻿<!DOCTYPE html>
-
+﻿
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            font-size:16px;
+        }
+        h1 {
+            font-size:2.5em;
+            font-weight:100;
+            margin-bottom:0;
+        }
+        .left {
+            float:left;
+            width:300px;
+        }
+        .container {
+        
+            width:600px;
+            height:300px;
+            position:absolute;
+            right:50%;
+            margin-right:-300px;
+            top:50%;
+            margin-top:-150px;
+           
+        }
+        .image {
+            float:right;
+            height:237px;
+            width:229px;
+            background:no-repeat;
+            background-image: url(data:image/png;base64,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);
+        }
+        .message {
+        margin-bottom:60px;
+        }
+        .copyright {
+            font-size:.8em;
+        }
+    </style>
 </head>
 <body>
-    <h1>404 Beep boop, this no exists</h1>
+    <div class="container">
+        <div class="left">
+            <h1>404 beep boop</h1>
+            <p class="message">The page you have requested cannot be found.</p>
+            <p class="copyright">Copyright © 2014 The MITRE Corporation</p>
+        </div>
+        <div class="image"></div>
+    </div>
 </body>
 </html>
