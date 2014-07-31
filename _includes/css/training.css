@@ -9758,12 +9758,8 @@ ul.weeks h3.sectionname {
     width: 100%;
     padding: 5px;
     margin-bottom: 15px;
-    border: 1px dotted #ddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    border: 1px solid #ddd;
 }
-
     .coursebox .summary .category {
         text-align: right;
     }
@@ -9795,12 +9791,11 @@ ul.weeks h3.sectionname {
     .coursebox .info, .coursebox .summary {
         display: block;
         float: left;
-        width: none;
         width: 48%;
         min-height: 30px;
         padding: 0;
         margin: 0;
-        margin-left: 2.76243%;
+        margin-left: 10px;
         border: 0;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
