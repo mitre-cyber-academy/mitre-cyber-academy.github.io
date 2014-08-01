@@ -1,8 +1,25 @@
 ﻿.class {
 }
 .mediaplugin_youtube {
-    max-width:750px;
+    max-width:400px;
     margin-bottom:2em;
+}
+.video-list {
+    list-style:none;
+    margin:0;
+}
+    .video-list li {
+        margin-right:50px;
+        display:inline-block;
+            min-width:400px;
+            float:left;
+    }
+@media (max-width:700px) {
+    .video-list li {
+        display:block;
+        min-width:0;
+        float:none;
+    }
 }
 .video-container iframe,
 .video-container object,
