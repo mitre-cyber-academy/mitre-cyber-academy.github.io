@@ -1,0 +1,270 @@
+<!--
+ __  __ ___ _____ ___ ___ 
+|  \/  |_ _|_   _| _ \ __|
+| |\/| || |  | | |   / _| 
+|_|  |_|___| |_| |_|_\___|
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>MITRE CTF 2014 : GameOfPWNZ</title>
+<link href="../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="../assets/application.js" type="text/javascript"></script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="sfHHtUiGh4S5su0P0leHipqQiUMvlgcvNyW0DHErT98=" name="csrf-token" />
+
+<script>
+  $(document).ready(function() {
+    $("#nav-gameofpwnz").addClass("active");
+  });
+</script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<ul class='nav pull-left'>
+<a href="../index.html" class="brand">MITRE CTF 2014</a>
+<li id='nav-teams'><a href="../users.html">Teams</a></li>
+<li id='nav-achievements'><a href="../achievements.html">Achievements</a></li>
+<li id='nav-summary'><a href="../summary.html">Summary</a></li>
+</ul>
+<ul class='nav pull-right'>
+<li><a href="../signin.html">Log In</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='container'>
+<h1>
+GameOfPWNZ
+<small>1950 points and 0 achievements</small>
+</h1>
+
+<div class='row'>
+<div class='span5'>
+<h3 class='muted'>Flags/Min:</h3>
+<!-- This is an ugly hack because of https://github.com/paulnicholson/coffee-filter#caveats -->
+<script>
+  if(typeof(data) == "undefined"){
+  	data = {}
+  	style = {}
+  	chartHeight = {}
+  	chartWidth = {}
+  	interpolate = {}
+  	events = {}
+  }
+  id = "timeline"
+  data[id] = [{"date":"2014-08-15T22:30:00Z","style":null,"count":1},{"date":"2014-08-15T22:59:00Z","style":null,"count":9},{"date":"2014-08-15T23:02:00Z","style":null,"count":1},{"date":"2014-08-15T23:04:00Z","style":null,"count":1},{"date":"2014-08-15T23:08:00Z","style":null,"count":2},{"date":"2014-08-15T23:25:00Z","style":null,"count":2},{"date":"2014-08-15T23:27:00Z","style":null,"count":3},{"date":"2014-08-15T23:32:00Z","style":null,"count":3},{"date":"2014-08-15T23:34:00Z","style":null,"count":3},{"date":"2014-08-15T23:36:00Z","style":null,"count":2},{"date":"2014-08-15T23:40:00Z","style":null,"count":1},{"date":"2014-08-15T23:42:00Z","style":null,"count":1},{"date":"2014-08-15T23:39:00Z","style":null,"count":2},{"date":"2014-08-15T23:31:00Z","style":null,"count":1},{"date":"2014-08-15T23:33:00Z","style":null,"count":1},{"date":"2014-08-15T23:45:00Z","style":null,"count":1},{"date":"2014-08-15T23:48:00Z","style":null,"count":1},{"date":"2014-08-15T23:50:00Z","style":null,"count":1},{"date":"2014-08-15T23:56:00Z","style":null,"count":2},{"date":"2014-08-15T23:57:00Z","style":null,"count":1},{"date":"2014-08-15T23:59:00Z","style":null,"count":1},{"date":"2014-08-16T00:06:00Z","style":null,"count":1},{"date":"2014-08-16T00:03:00Z","style":null,"count":1},{"date":"2014-08-16T00:18:00Z","style":null,"count":1},{"date":"2014-08-16T00:37:00Z","style":null,"count":1},{"date":"2014-08-16T00:38:00Z","style":null,"count":1},{"date":"2014-08-16T00:47:00Z","style":null,"count":1},{"date":"2014-08-16T00:39:00Z","style":null,"count":1},{"date":"2014-08-16T00:46:00Z","style":null,"count":2},{"date":"2014-08-16T00:53:00Z","style":null,"count":1},{"date":"2014-08-16T00:54:00Z","style":null,"count":1},{"date":"2014-08-16T00:58:00Z","style":null,"count":1},{"date":"2014-08-16T01:05:00Z","style":null,"count":1},{"date":"2014-08-16T01:19:00Z","style":null,"count":1},{"date":"2014-08-16T01:20:00Z","style":null,"count":1},{"date":"2014-08-16T01:31:00Z","style":null,"count":3},{"date":"2014-08-16T01:33:00Z","style":null,"count":2},{"date":"2014-08-16T01:59:00Z","style":null,"count":1},{"date":"2014-08-16T02:24:00Z","style":null,"count":1},{"date":"2014-08-16T02:58:00Z","style":null,"count":1},{"date":"2014-08-16T04:53:00Z","style":null,"count":1},{"date":"2014-08-16T05:14:00Z","style":null,"count":1},{"date":"2014-08-16T06:20:00Z","style":null,"count":4},{"date":"2014-08-16T06:23:00Z","style":null,"count":2},{"date":"2014-08-16T06:06:00Z","style":null,"count":1},{"date":"2014-08-16T06:07:00Z","style":null,"count":2},{"date":"2014-08-16T06:08:00Z","style":null,"count":1},{"date":"2014-08-16T06:09:00Z","style":null,"count":4},{"date":"2014-08-16T06:10:00Z","style":null,"count":1},{"date":"2014-08-16T06:13:00Z","style":null,"count":1},{"date":"2014-08-16T06:14:00Z","style":null,"count":2},{"date":"2014-08-16T06:16:00Z","style":null,"count":1},{"date":"2014-08-16T06:17:00Z","style":null,"count":1},{"date":"2014-08-16T06:18:00Z","style":null,"count":5},{"date":"2014-08-16T06:19:00Z","style":null,"count":1},{"date":"2014-08-16T06:21:00Z","style":null,"count":1},{"date":"2014-08-16T10:26:00Z","style":null,"count":2},{"date":"2014-08-16T10:38:00Z","style":null,"count":1},{"date":"2014-08-16T16:51:00Z","style":null,"count":1},{"date":"2014-08-16T16:52:00Z","style":null,"count":2},{"date":"2014-08-16T16:55:00Z","style":null,"count":2},{"date":"2014-08-16T16:56:00Z","style":null,"count":3},{"date":"2014-08-16T16:57:00Z","style":null,"count":3},{"date":"2014-08-16T16:59:00Z","style":null,"count":3},{"date":"2014-08-16T17:04:00Z","style":null,"count":4},{"date":"2014-08-16T17:50:00Z","style":null,"count":1},{"date":"2014-08-16T18:37:00Z","style":null,"count":2},{"date":"2014-08-16T18:38:00Z","style":null,"count":2},{"date":"2014-08-16T18:44:00Z","style":null,"count":1}]
+  chartHeight[id] = 17
+  chartWidth[id] = 940
+  style[id] = "timeline"
+  interpolate[id] = "cardinal-open"
+  
+  margin = 17
+</script>
+<div id='timeline'></div>
+<script>
+  (function() {
+    var area, axis, chart, heightScale, timeScale, xAxis;
+  
+    axis = true;
+  
+    if (chartHeight[id] < 100) {
+      axis = false;
+    }
+  
+    chartWidth[id] = document.getElementById(id).parentElement.clientWidth;
+  
+    chart = d3.select("#" + id).append("svg").attr("class", style[id]).attr("width", function() {
+      return chartWidth[id] + "px";
+    }).attr("height", function() {
+      return chartHeight[id] + "px";
+    });
+  
+    heightScale = d3.scale.linear().range([chartHeight[id], 0]).domain([
+      d3.max(data[id], function(d) {
+        return d["count"];
+      }), 0
+    ]);
+  
+    timeScale = d3.time.scale().range([0, chartWidth[id]]).domain(d3.extent(data[id], function(d) {
+      return new Date(d["date"]);
+    }));
+  
+    area = d3.svg.area().interpolate(interpolate[id]).x(function(d) {
+      return timeScale(new Date(d["date"]));
+    }).y0(chartHeight[id]).y1(function(d) {
+      return heightScale(d["count"]);
+    });
+  
+    xAxis = d3.svg.axis().scale(timeScale).orient("top");
+  
+    chart.append("path").datum(data[id].sort(function(a, b) {
+      return new Date(a["date"]) - new Date(b["date"]);
+    })).attr("class", "data").attr("d", area);
+  
+    if (axis) {
+      chart.append("g").attr("class", "x axis").attr("transform", "translate(0," + chartHeight[id] + ")").call(xAxis);
+    }
+  
+  }).call(this);
+</script>
+
+</div>
+<div class='span5 offset1'>
+<h3 class='muted'>
+Affiliation:
+<small>
+Collegiate
+</small>
+</h3>
+</div>
+</div>
+<div class='row'>
+<div class='span5'>
+<table class='table table-bordered table-striped'>
+<thead>
+<tr>
+<th>#</th>
+<th>Category</th>
+<th>Points</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Cryptography</td>
+<td>50</td>
+<td>Aug 16 14, 18:44 UTC</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Forensics</td>
+<td>300</td>
+<td>Aug 16 14, 18:38 UTC</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Grab Bag</td>
+<td>200</td>
+<td>Aug 16 14, 17:50 UTC</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Forensics</td>
+<td>200</td>
+<td>Aug 16 14, 17:04 UTC</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Web</td>
+<td>300</td>
+<td>Aug 16 14, 05:14 UTC</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Forensics</td>
+<td>300</td>
+<td>Aug 16 14, 02:58 UTC</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Web</td>
+<td>100</td>
+<td>Aug 16 14, 02:24 UTC</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Web</td>
+<td>50</td>
+<td>Aug 16 14, 01:20 UTC</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Cryptography</td>
+<td>50</td>
+<td>Aug 16 14, 01:19 UTC</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Forensics</td>
+<td>100</td>
+<td>Aug 16 14, 01:05 UTC</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Grab Bag</td>
+<td>100</td>
+<td>Aug 16 14, 00:06 UTC</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Web</td>
+<td>200</td>
+<td>Aug 15 14, 23:50 UTC</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='span5 offset1'>
+<div id='map'></div>
+<script>
+  var players = [{"affiliation":"Collegiate","city":"Texas","created_at":"2014-08-14T13:38:33Z","display_name":"GameOfPWNZ","email":"gameofpwnz","game_id":1,"id":53,"latitude":31.9685988,"longitude":-99.9018131,"messages_stamp":"2014-08-16T20:06:38Z","tags":null,"updated_at":"2014-08-16T20:06:38Z"}]
+</script>
+<script>
+  (function() {
+    var g, height, path, projection, svg, width;
+  
+    width = document.getElementById("map").clientWidth;
+  
+    height = width / 2;
+  
+    projection = d3.geo.albersUsa().scale(width).translate([width / 2, height / 2]);
+  
+    path = d3.geo.path().projection(projection);
+  
+    svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
+  
+    g = svg.append("g").attr("id", "states");
+  
+    d3.json("/competitions/august-2014-college/states.json", function(json) {
+      g.selectAll("path").data(json.features).enter().append("path").attr("d", path).attr("class", "state");
+      return svg.selectAll(".team").data(players).enter().append("path").attr("d", d3.svg.symbol().type(function(d) {
+        var _ref;
+  
+        if (((_ref = d.tags) != null ? _ref.indexOf("mitre") : void 0) > 0) {
+          return "triangle-up";
+        } else {
+          return "circle";
+        }
+      }).size(64)).attr("id", function(d) {
+        return d.email;
+      }).attr("transform", function(d) {
+        var translate;
+  
+        translate = projection([d.longitude, d.latitude]);
+        return "translate(" + translate[0] + "," + translate[1] + ")";
+      }).attr("tags", function(d) {
+        return d.tags;
+      }).attr("class", function(d) {
+        return "team_location " + d.tags;
+      });
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+<h3>Achievements</h3>
+<div class='zero-items-text'>No Achievements</div>
+
+</div>
+<div class='container'>
+<p style='text-align:center;margin-top:40px;'>MITRE Cyber Academy&trade;</p>
+<!-- %p{ :style => "text-align:center;margin-bottom:40px 0;" } The MITRE Corporation -->
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!--
+ __  __ ___ _____ ___ ___ 
+|  \/  |_ _|_   _| _ \ __|
+| |\/| || |  | | |   / _| 
+|_|  |_|___| |_| |_|_\___|
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>MITRE CTF 2014 : FallenStars</title>
+<link href="../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="../assets/application.js" type="text/javascript"></script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="sfHHtUiGh4S5su0P0leHipqQiUMvlgcvNyW0DHErT98=" name="csrf-token" />
+
+<script>
+  $(document).ready(function() {
+    $("#nav-fallenstars").addClass("active");
+  });
+</script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<ul class='nav pull-left'>
+<a href="../index.html" class="brand">MITRE CTF 2014</a>
+<li id='nav-teams'><a href="../users.html">Teams</a></li>
+<li id='nav-achievements'><a href="../achievements.html">Achievements</a></li>
+<li id='nav-summary'><a href="../summary.html">Summary</a></li>
+</ul>
+<ul class='nav pull-right'>
+<li><a href="../signin.html">Log In</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='container'>
+<h1>
+FallenStars
+<small>0 points and 0 achievements</small>
+</h1>
+
+<div class='row'>
+<div class='span5'>
+<h3 class='muted'>Flags/Min:</h3>
+<!-- This is an ugly hack because of https://github.com/paulnicholson/coffee-filter#caveats -->
+<script>
+  if(typeof(data) == "undefined"){
+  	data = {}
+  	style = {}
+  	chartHeight = {}
+  	chartWidth = {}
+  	interpolate = {}
+  	events = {}
+  }
+  id = "timeline"
+  data[id] = [{"date":"2014-08-16T09:02:00Z","style":null,"count":1}]
+  chartHeight[id] = 17
+  chartWidth[id] = 940
+  style[id] = "timeline"
+  interpolate[id] = "cardinal-open"
+  
+  margin = 17
+</script>
+<div id='timeline'></div>
+<script>
+  (function() {
+    var area, axis, chart, heightScale, timeScale, xAxis;
+  
+    axis = true;
+  
+    if (chartHeight[id] < 100) {
+      axis = false;
+    }
+  
+    chartWidth[id] = document.getElementById(id).parentElement.clientWidth;
+  
+    chart = d3.select("#" + id).append("svg").attr("class", style[id]).attr("width", function() {
+      return chartWidth[id] + "px";
+    }).attr("height", function() {
+      return chartHeight[id] + "px";
+    });
+  
+    heightScale = d3.scale.linear().range([chartHeight[id], 0]).domain([
+      d3.max(data[id], function(d) {
+        return d["count"];
+      }), 0
+    ]);
+  
+    timeScale = d3.time.scale().range([0, chartWidth[id]]).domain(d3.extent(data[id], function(d) {
+      return new Date(d["date"]);
+    }));
+  
+    area = d3.svg.area().interpolate(interpolate[id]).x(function(d) {
+      return timeScale(new Date(d["date"]));
+    }).y0(chartHeight[id]).y1(function(d) {
+      return heightScale(d["count"]);
+    });
+  
+    xAxis = d3.svg.axis().scale(timeScale).orient("top");
+  
+    chart.append("path").datum(data[id].sort(function(a, b) {
+      return new Date(a["date"]) - new Date(b["date"]);
+    })).attr("class", "data").attr("d", area);
+  
+    if (axis) {
+      chart.append("g").attr("class", "x axis").attr("transform", "translate(0," + chartHeight[id] + ")").call(xAxis);
+    }
+  
+  }).call(this);
+</script>
+
+</div>
+<div class='span5 offset1'>
+<h3 class='muted'>
+Affiliation:
+<small>
+Florida
+</small>
+</h3>
+</div>
+</div>
+<div class='row'>
+<div class='span5'>
+<div class='zero-items-text'>No Solved Challenges</div>
+</div>
+<div class='span5 offset1'>
+<div id='map'></div>
+<script>
+  var players = [{"affiliation":"Florida","city":"Orlando, FL","created_at":"2014-08-14T13:13:35Z","display_name":"FallenStars","email":"fallenstars","game_id":1,"id":20,"latitude":28.5383355,"longitude":-81.3792365,"messages_stamp":"2014-08-16T09:03:50Z","tags":"","updated_at":"2014-08-16T09:33:37Z"}]
+</script>
+<script>
+  (function() {
+    var g, height, path, projection, svg, width;
+  
+    width = document.getElementById("map").clientWidth;
+  
+    height = width / 2;
+  
+    projection = d3.geo.albersUsa().scale(width).translate([width / 2, height / 2]);
+  
+    path = d3.geo.path().projection(projection);
+  
+    svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
+  
+    g = svg.append("g").attr("id", "states");
+  
+    d3.json("/competitions/august-2014-college/states.json", function(json) {
+      g.selectAll("path").data(json.features).enter().append("path").attr("d", path).attr("class", "state");
+      return svg.selectAll(".team").data(players).enter().append("path").attr("d", d3.svg.symbol().type(function(d) {
+        var _ref;
+  
+        if (((_ref = d.tags) != null ? _ref.indexOf("mitre") : void 0) > 0) {
+          return "triangle-up";
+        } else {
+          return "circle";
+        }
+      }).size(64)).attr("id", function(d) {
+        return d.email;
+      }).attr("transform", function(d) {
+        var translate;
+  
+        translate = projection([d.longitude, d.latitude]);
+        return "translate(" + translate[0] + "," + translate[1] + ")";
+      }).attr("tags", function(d) {
+        return d.tags;
+      }).attr("class", function(d) {
+        return "team_location " + d.tags;
+      });
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+<h3>Achievements</h3>
+<div class='zero-items-text'>No Achievements</div>
+
+</div>
+<div class='container'>
+<p style='text-align:center;margin-top:40px;'>MITRE Cyber Academy&trade;</p>
+<!-- %p{ :style => "text-align:center;margin-bottom:40px 0;" } The MITRE Corporation -->
+</div>
+</body>
+</html>

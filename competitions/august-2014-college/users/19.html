@@ -1,0 +1,229 @@
+<!--
+ __  __ ___ _____ ___ ___ 
+|  \/  |_ _|_   _| _ \ __|
+| |\/| || |  | | |   / _| 
+|_|  |_|___| |_| |_|_\___|
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>MITRE CTF 2014 : AACC Fractal</title>
+<link href="../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="../assets/application.js" type="text/javascript"></script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="sfHHtUiGh4S5su0P0leHipqQiUMvlgcvNyW0DHErT98=" name="csrf-token" />
+
+<script>
+  $(document).ready(function() {
+    $("#nav-aacc fractal").addClass("active");
+  });
+</script>
+</head>
+<body>
+<div class='navbar navbar-fixed-top'>
+<div class='navbar-inner'>
+<div class='container'>
+<ul class='nav pull-left'>
+<a href="../index.html" class="brand">MITRE CTF 2014</a>
+<li id='nav-teams'><a href="../users.html">Teams</a></li>
+<li id='nav-achievements'><a href="../achievements.html">Achievements</a></li>
+<li id='nav-summary'><a href="../summary.html">Summary</a></li>
+</ul>
+<ul class='nav pull-right'>
+<li><a href="../signin.html">Log In</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='container'>
+<h1>
+AACC Fractal
+<small>450 points and 1 achievement</small>
+</h1>
+
+<div class='row'>
+<div class='span5'>
+<h3 class='muted'>Flags/Min:</h3>
+<!-- This is an ugly hack because of https://github.com/paulnicholson/coffee-filter#caveats -->
+<script>
+  if(typeof(data) == "undefined"){
+  	data = {}
+  	style = {}
+  	chartHeight = {}
+  	chartWidth = {}
+  	interpolate = {}
+  	events = {}
+  }
+  id = "timeline"
+  data[id] = [{"date":"2014-08-15T19:39:00Z","style":null,"count":1},{"date":"2014-08-15T21:52:00Z","style":null,"count":1},{"date":"2014-08-15T22:21:00Z","style":null,"count":1},{"date":"2014-08-15T22:22:00Z","style":null,"count":3},{"date":"2014-08-15T22:39:00Z","style":null,"count":4},{"date":"2014-08-15T22:27:00Z","style":null,"count":1},{"date":"2014-08-15T22:32:00Z","style":null,"count":1},{"date":"2014-08-15T22:29:00Z","style":null,"count":2},{"date":"2014-08-15T22:30:00Z","style":null,"count":2},{"date":"2014-08-15T22:43:00Z","style":null,"count":2},{"date":"2014-08-15T23:43:00Z","style":null,"count":1},{"date":"2014-08-15T23:44:00Z","style":null,"count":1},{"date":"2014-08-16T00:18:00Z","style":null,"count":1},{"date":"2014-08-16T02:25:00Z","style":null,"count":1},{"date":"2014-08-16T02:50:00Z","style":null,"count":1},{"date":"2014-08-16T03:18:00Z","style":null,"count":1},{"date":"2014-08-16T03:35:00Z","style":null,"count":3},{"date":"2014-08-16T03:37:00Z","style":null,"count":2},{"date":"2014-08-16T03:48:00Z","style":null,"count":1},{"date":"2014-08-16T03:47:00Z","style":null,"count":1},{"date":"2014-08-16T03:38:00Z","style":null,"count":1},{"date":"2014-08-16T04:28:00Z","style":null,"count":1},{"date":"2014-08-16T04:29:00Z","style":null,"count":1},{"date":"2014-08-16T04:31:00Z","style":null,"count":2},{"date":"2014-08-16T04:38:00Z","style":null,"count":1},{"date":"2014-08-16T04:58:00Z","style":null,"count":1},{"date":"2014-08-16T05:01:00Z","style":null,"count":4},{"date":"2014-08-16T05:06:00Z","style":null,"count":3},{"date":"2014-08-16T05:07:00Z","style":null,"count":1},{"date":"2014-08-16T05:09:00Z","style":null,"count":2},{"date":"2014-08-16T05:10:00Z","style":null,"count":1},{"date":"2014-08-16T05:20:00Z","style":null,"count":1},{"date":"2014-08-16T05:31:00Z","style":null,"count":1},{"date":"2014-08-16T05:35:00Z","style":null,"count":1},{"date":"2014-08-16T05:37:00Z","style":null,"count":2},{"date":"2014-08-16T05:38:00Z","style":null,"count":1},{"date":"2014-08-16T06:10:00Z","style":null,"count":2},{"date":"2014-08-16T06:36:00Z","style":null,"count":4},{"date":"2014-08-16T06:57:00Z","style":null,"count":1},{"date":"2014-08-16T07:11:00Z","style":null,"count":1},{"date":"2014-08-16T07:12:00Z","style":null,"count":1},{"date":"2014-08-16T07:17:00Z","style":null,"count":1},{"date":"2014-08-16T11:53:00Z","style":null,"count":2},{"date":"2014-08-16T12:17:00Z","style":null,"count":1},{"date":"2014-08-16T12:21:00Z","style":null,"count":1},{"date":"2014-08-16T12:40:00Z","style":null,"count":1},{"date":"2014-08-16T13:23:00Z","style":null,"count":1},{"date":"2014-08-16T13:24:00Z","style":null,"count":1},{"date":"2014-08-16T13:26:00Z","style":null,"count":1},{"date":"2014-08-16T13:37:00Z","style":null,"count":1},{"date":"2014-08-16T13:44:00Z","style":null,"count":3},{"date":"2014-08-16T12:23:00Z","style":null,"count":1},{"date":"2014-08-16T12:42:00Z","style":null,"count":2},{"date":"2014-08-16T13:14:00Z","style":null,"count":1},{"date":"2014-08-16T13:15:00Z","style":null,"count":1},{"date":"2014-08-16T13:34:00Z","style":null,"count":1},{"date":"2014-08-16T13:35:00Z","style":null,"count":1},{"date":"2014-08-16T13:36:00Z","style":null,"count":1},{"date":"2014-08-16T14:11:00Z","style":null,"count":2},{"date":"2014-08-16T14:12:00Z","style":null,"count":2},{"date":"2014-08-16T14:13:00Z","style":null,"count":2},{"date":"2014-08-16T14:14:00Z","style":null,"count":1},{"date":"2014-08-16T14:15:00Z","style":null,"count":1},{"date":"2014-08-16T14:16:00Z","style":null,"count":1},{"date":"2014-08-16T14:20:00Z","style":null,"count":4},{"date":"2014-08-16T14:27:00Z","style":null,"count":1},{"date":"2014-08-16T14:29:00Z","style":null,"count":2},{"date":"2014-08-16T14:30:00Z","style":null,"count":2},{"date":"2014-08-16T14:31:00Z","style":null,"count":3},{"date":"2014-08-16T14:32:00Z","style":null,"count":1},{"date":"2014-08-16T14:38:00Z","style":null,"count":2},{"date":"2014-08-16T14:43:00Z","style":null,"count":3},{"date":"2014-08-16T14:36:00Z","style":null,"count":1},{"date":"2014-08-16T14:37:00Z","style":null,"count":1},{"date":"2014-08-16T14:51:00Z","style":null,"count":4},{"date":"2014-08-16T14:54:00Z","style":null,"count":4},{"date":"2014-08-16T14:55:00Z","style":null,"count":1},{"date":"2014-08-16T14:57:00Z","style":null,"count":1},{"date":"2014-08-16T15:00:00Z","style":null,"count":1},{"date":"2014-08-16T15:03:00Z","style":null,"count":2},{"date":"2014-08-16T14:52:00Z","style":null,"count":2},{"date":"2014-08-16T14:53:00Z","style":null,"count":1},{"date":"2014-08-16T14:58:00Z","style":null,"count":1},{"date":"2014-08-16T15:06:00Z","style":null,"count":2},{"date":"2014-08-16T15:07:00Z","style":null,"count":2},{"date":"2014-08-16T15:09:00Z","style":null,"count":3},{"date":"2014-08-16T15:10:00Z","style":null,"count":2},{"date":"2014-08-16T15:04:00Z","style":null,"count":2},{"date":"2014-08-16T15:05:00Z","style":null,"count":1},{"date":"2014-08-16T15:08:00Z","style":null,"count":1},{"date":"2014-08-16T15:37:00Z","style":null,"count":1},{"date":"2014-08-16T16:03:00Z","style":null,"count":1},{"date":"2014-08-16T16:05:00Z","style":null,"count":1},{"date":"2014-08-16T16:07:00Z","style":null,"count":1},{"date":"2014-08-16T16:08:00Z","style":null,"count":1}]
+  chartHeight[id] = 17
+  chartWidth[id] = 940
+  style[id] = "timeline"
+  interpolate[id] = "cardinal-open"
+  
+  margin = 17
+</script>
+<div id='timeline'></div>
+<script>
+  (function() {
+    var area, axis, chart, heightScale, timeScale, xAxis;
+  
+    axis = true;
+  
+    if (chartHeight[id] < 100) {
+      axis = false;
+    }
+  
+    chartWidth[id] = document.getElementById(id).parentElement.clientWidth;
+  
+    chart = d3.select("#" + id).append("svg").attr("class", style[id]).attr("width", function() {
+      return chartWidth[id] + "px";
+    }).attr("height", function() {
+      return chartHeight[id] + "px";
+    });
+  
+    heightScale = d3.scale.linear().range([chartHeight[id], 0]).domain([
+      d3.max(data[id], function(d) {
+        return d["count"];
+      }), 0
+    ]);
+  
+    timeScale = d3.time.scale().range([0, chartWidth[id]]).domain(d3.extent(data[id], function(d) {
+      return new Date(d["date"]);
+    }));
+  
+    area = d3.svg.area().interpolate(interpolate[id]).x(function(d) {
+      return timeScale(new Date(d["date"]));
+    }).y0(chartHeight[id]).y1(function(d) {
+      return heightScale(d["count"]);
+    });
+  
+    xAxis = d3.svg.axis().scale(timeScale).orient("top");
+  
+    chart.append("path").datum(data[id].sort(function(a, b) {
+      return new Date(a["date"]) - new Date(b["date"]);
+    })).attr("class", "data").attr("d", area);
+  
+    if (axis) {
+      chart.append("g").attr("class", "x axis").attr("transform", "translate(0," + chartHeight[id] + ")").call(xAxis);
+    }
+  
+  }).call(this);
+</script>
+
+</div>
+<div class='span5 offset1'>
+<h3 class='muted'>
+Affiliation:
+<small>
+Anne Arundel Community College
+</small>
+</h3>
+</div>
+</div>
+<div class='row'>
+<div class='span5'>
+<table class='table table-bordered table-striped'>
+<thead>
+<tr>
+<th>#</th>
+<th>Category</th>
+<th>Points</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Forensics</td>
+<td>300</td>
+<td>Aug 16 14, 02:50 UTC</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Web</td>
+<td>100</td>
+<td>Aug 16 14, 02:25 UTC</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Web</td>
+<td>50</td>
+<td>Aug 15 14, 19:39 UTC</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='span5 offset1'>
+<div id='map'></div>
+<script>
+  var players = [{"affiliation":"Anne Arundel Community College","city":"Arnold, MD","created_at":"2014-08-14T13:13:35Z","display_name":"AACC Fractal","email":"aacc_fractal","game_id":1,"id":19,"latitude":39.0320554,"longitude":-76.5027395,"messages_stamp":"2014-08-17T02:25:46Z","tags":null,"updated_at":"2014-08-17T02:25:46Z"}]
+</script>
+<script>
+  (function() {
+    var g, height, path, projection, svg, width;
+  
+    width = document.getElementById("map").clientWidth;
+  
+    height = width / 2;
+  
+    projection = d3.geo.albersUsa().scale(width).translate([width / 2, height / 2]);
+  
+    path = d3.geo.path().projection(projection);
+  
+    svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
+  
+    g = svg.append("g").attr("id", "states");
+  
+    d3.json("/competitions/august-2014-college/states.json", function(json) {
+      g.selectAll("path").data(json.features).enter().append("path").attr("d", path).attr("class", "state");
+      return svg.selectAll(".team").data(players).enter().append("path").attr("d", d3.svg.symbol().type(function(d) {
+        var _ref;
+  
+        if (((_ref = d.tags) != null ? _ref.indexOf("mitre") : void 0) > 0) {
+          return "triangle-up";
+        } else {
+          return "circle";
+        }
+      }).size(64)).attr("id", function(d) {
+        return d.email;
+      }).attr("transform", function(d) {
+        var translate;
+  
+        translate = projection([d.longitude, d.latitude]);
+        return "translate(" + translate[0] + "," + translate[1] + ")";
+      }).attr("tags", function(d) {
+        return d.tags;
+      }).attr("class", function(d) {
+        return "team_location " + d.tags;
+      });
+    });
+  
+  }).call(this);
+</script>
+
+</div>
+</div>
+<h3>Achievements</h3>
+<table class='table table-bordered table-striped'>
+<thead>
+<tr>
+<th>Name</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persistence</td>
+<td>Aug 16 14, 14:39 UTC</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class='container'>
+<p style='text-align:center;margin-top:40px;'>MITRE Cyber Academy&trade;</p>
+<!-- %p{ :style => "text-align:center;margin-bottom:40px 0;" } The MITRE Corporation -->
+</div>
+</body>
+</html>
