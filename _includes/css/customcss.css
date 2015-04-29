@@ -334,6 +334,14 @@
 .well-small {
 	min-height:10px;
 }
+.center-dropdown {
+    left: auto !important;
+    right: -25% !important;
+}
+.center-dropdown:after {
+   left: auto !important;
+   right: 45% !important;
+}
 @media (max-width: 767px) {
   .jumbotron {
     padding: 0 !important;
