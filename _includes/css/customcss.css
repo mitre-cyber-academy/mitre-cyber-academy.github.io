@@ -136,6 +136,20 @@
 	background-size: auto 110px;
 	width:100px;
 }
+.a-school-head {
+	background-image:url("../img/school-white.png");
+	background-repeat:no-repeat;
+	padding: 50px 50px 40px 0;
+	background-size: auto 110px;
+	width:100px;
+}
+.a-attack-head {
+	background-image:url("../img/attack-white.png");
+	background-repeat:no-repeat;
+	padding: 50px 50px 40px 0;
+	background-size: auto 110px;
+	width:100px;
+}
 .a-partner-corporate {
 	background-image:url('../img/partnership-white.png');
 	background-repeat:no-repeat;
@@ -145,6 +159,34 @@
 }
 .a-train-corporate {
 	background-image:url('../img/training-white.png');
+	background-repeat:no-repeat;
+	padding: 50px 50px 40px 60px;
+	background-size: auto 110px;
+	width:100px;	
+}
+.a-corporate-corporate {
+	background-image:url('../img/corporate-white.png');
+	background-repeat:no-repeat;
+	padding: 50px 50px 40px 60px;
+	background-size: auto 110px;
+	width:100px;	
+}
+.a-mobile-head {
+	background-image:url('../img/mobile-orig-white.png');
+	background-repeat:no-repeat;
+	padding: 50px 50px 40px 60px;
+	background-size: auto 110px;
+	width:100px;	
+}
+.a-pencil-head {
+	background-image:url('../img/pencil-white.png');
+	background-repeat:no-repeat;
+	padding: 50px 50px 40px 60px;
+	background-size: auto 110px;
+	width:100px;	
+}
+.a-hack-head {
+	background-image:url('../img/hack-white.png');
 	background-repeat:no-repeat;
 	padding: 50px 50px 40px 60px;
 	background-size: auto 110px;
