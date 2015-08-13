@@ -1,67 +1,13 @@
 /*!
- * Bootstrap Responsive v2.1.1
+ * Bootstrap Responsive v2.3.2
  *
- * Copyright 2012 Twitter, Inc
+ * Copyright 2013 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Designed and built with all the love in the world by @mdo and @fat.
  */
-body {
-  padding-top:40px;
-}
-.jumbotron {
-  position: relative;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #476988; /* Old browsers */
-  background: rgb(71, 105, 136);
-  background: -moz-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: -webkit-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: -o-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: -ms-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#446582', endColorstr='#5D8CB6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-}
-.corporate {
-  background: #3F7D13; /* Old browsers */
-  background: rgb(63, 125, 19);
-  background: -moz-linear-gradient(0deg, rgb(42, 109, 0) 30%, rgb(93, 147, 47) 70%);
-  background: -webkit-linear-gradient(0deg, rgb(42, 109, 0) 30%, rgb(93, 147, 47) 70%);
-  background: -o-linear-gradient(0deg, rgb(42, 109, 0) 30%, rgb(93, 147, 47) 70%);
-  background: -ms-linear-gradient(0deg, rgb(42, 109, 0) 30%, rgb(93, 147, 47) 70%);
-  background: linear-gradient(0deg, rgb(42, 109, 0) 30%, rgb(93, 147, 47) 70%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2A6D00', endColorstr='#5D932F',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-.jumbotron h1 {
-  font-size: 80px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 1;
-}
-.jumbotron p {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 30px;
-  margin-bottom: 30px;
-}
 
-/* Link styles (used on .masthead-links as well) */
-.jumbotron a {
-  color: #fff;
-  color: rgba(255,255,255,.5);
-  -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-}
-.jumbotron a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255,255,255,.25);
-}
 .clearfix {
   *zoom: 1;
 }
@@ -92,6 +38,10 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@-ms-viewport {
+  width: device-width;
 }
 
 .hidden {
@@ -128,7 +78,6 @@ body {
   .hidden-tablet {
     display: none !important;
   }
-  
 }
 
 @media (max-width: 767px) {
@@ -144,22 +93,18 @@ body {
   .hidden-phone {
     display: none !important;
   }
-  body {
-    padding-top: 0;
-  }
+}
 
-  /* Widen masthead and social buttons to fill body padding */
-  .jumbotron {
-    padding: 40px 20px;
-    margin-right: -20px;
-    margin-left:  -20px;
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  .visible-print {
+    display: inherit !important;
   }
-  .masthead h1 {
-    font-size: 90px;
-  }
-  .masthead p,
-  .masthead .btn {
-    font-size: 24px;
+  .hidden-print {
+    display: none !important;
   }
 }
 
@@ -286,6 +231,9 @@ body {
   }
   .row-fluid [class*="span"]:first-child {
     margin-left: 0;
+  }
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.564102564102564%;
   }
   .row-fluid .span12 {
     width: 100%;
@@ -634,6 +582,9 @@ body {
   .row-fluid [class*="span"]:first-child {
     margin-left: 0;
   }
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.7624309392265194%;
+  }
   .row-fluid .span12 {
     width: 100%;
     *width: 99.94680851063829%;
@@ -886,6 +837,7 @@ body {
     margin-left: 0;
   }
   [class*="span"],
+  .uneditable-input[class*="span"],
   .row-fluid [class*="span"] {
     display: block;
     float: none;
@@ -901,6 +853,9 @@ body {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
   }
   .input-large,
   .input-xlarge,
@@ -934,24 +889,15 @@ body {
     width: auto;
     margin: 0;
   }
+  .modal.fade {
+    top: -100px;
+  }
   .modal.fade.in {
-    top: auto;
+    top: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  /* Downsize the jumbotrons */
-  .jumbotron h1 {
-    font-size: 45px;
-  }
-  .jumbotron p,
-  .jumbotron .btn {
-    font-size: 18px;
-  }
-  .jumbotron .btn {
-    display: block;
-    margin: 0 auto;
-  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
@@ -979,6 +925,16 @@ body {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .media .pull-left,
+  .media .pull-right {
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+  }
+  .media-object {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .modal {
     top: 10px;
     right: 10px;
@@ -1002,7 +958,7 @@ body {
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .navbar-fixed-bottom {
     margin-top: 20px;
@@ -1060,11 +1016,19 @@ body {
     margin-bottom: 2px;
   }
   .nav-collapse .nav > li > a:hover,
-  .nav-collapse .dropdown-menu a:hover {
+  .nav-collapse .nav > li > a:focus,
+  .nav-collapse .dropdown-menu a:hover,
+  .nav-collapse .dropdown-menu a:focus {
     background-color: #f2f2f2;
   }
+  .navbar-inverse .nav-collapse .nav > li > a,
+  .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #999999;
+  }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
-  .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+  .navbar-inverse .nav-collapse .nav > li > a:focus,
+  .navbar-inverse .nav-collapse .dropdown-menu a:hover,
+  .navbar-inverse .nav-collapse .dropdown-menu a:focus {
     background-color: #111111;
   }
   .nav-collapse.in .btn-group {
@@ -1075,7 +1039,7 @@ body {
     position: static;
     top: auto;
     left: auto;
-    display: block;
+    display: none;
     float: none;
     max-width: none;
     padding: 0;
@@ -1088,6 +1052,9 @@ body {
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
+  }
+  .nav-collapse .open > .dropdown-menu {
+    display: block;
   }
   .nav-collapse .dropdown-menu:before,
   .nav-collapse .dropdown-menu:after {
