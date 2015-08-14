@@ -1,7 +1,7 @@
 ---
 ---
-{% include css/bootstrap.css %}
-{% include css/bootstrap-responsive.css %}
+{% include css/bootstrap.min.css %}
+{% include css/bootstrap-responsive.min.css %}
 {% include css/customcss.css %}
 {% include css/sticky-footer.css %}
 {% include css/font-awesome.min.css %}
