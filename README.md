@@ -11,7 +11,7 @@ This repository is for the website for the MITRE Cyber Academy.
 3. Run ```gem install bundle```
 4. Run ```rbenv rehash```
 5. Run ```bundle install```
-6. Run ```bundle exec jekyll serve -w``` (The -w flag will monitor changes to the project, so you don't have to restart it every time you change a line of code)
+6. Run ```bundle exec jekyll serve```
 7. In your browser enter localhost:4000 in the address bar
 
 ### How do I contribute?
