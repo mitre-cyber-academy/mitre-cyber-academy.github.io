@@ -1,3 +1,4 @@
 relative_permalinks: false
 gems:
   - jekyll-redirect-from
+  - jekyll-seo-tag
