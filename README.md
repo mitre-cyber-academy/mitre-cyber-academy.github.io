@@ -2,7 +2,7 @@
 
 ### What is this?
 
-This repository is for the website for the MITRE Cyber Academy. 
+This repository is for the website for the MITRE Cyber Academy.
 
 ### Editing
 
@@ -11,7 +11,7 @@ This repository is for the website for the MITRE Cyber Academy.
 3. Run ```gem install bundle```
 4. Run ```rbenv rehash```
 5. Run ```bundle install```
-6. Run ```bundle exec jekyll serve```
+6. Run ```bundle exec jekyll server```
 7. In your browser enter localhost:4000 in the address bar
 
 ### How do I contribute?
