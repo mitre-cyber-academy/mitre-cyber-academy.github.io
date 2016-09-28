@@ -1,7 +1,7 @@
 <!--
- __  __ ___ _____ ___ ___ 
+ __  __ ___ _____ ___ ___
 |  \/  |_ _|_   _| _ \ __|
-| |\/| || |  | | |   / _| 
+| |\/| || |  | | |   / _|
 |_|  |_|___| |_| |_|_\___|
 -->
 <!DOCTYPE html>
@@ -51,11 +51,11 @@ Game Summary
     window.highlightOnMap = function(mapSelector, elementSelector) {
       return d3.selectAll(elementSelector).transition().attr("class", "highlighted");
     };
-  
+
     window.unhighlightOnMap = function(mapSelector, elementSelector) {
       return d3.selectAll(elementSelector).transition().delay(250).attr("class", "team_location " + d3.selectAll(elementSelector).attr("tags"));
     };
-  
+
   }).call(this);
 </script>
 <h3 class='muted'>
@@ -198,20 +198,20 @@ are currently playing.
 <script>
   (function() {
     var g, height, path, projection, svg, width;
-  
+
     width = document.getElementById("map").clientWidth;
-  
+
     height = width / 2;
-  
+
     projection = d3.geo.albersUsa().scale(width).translate([width / 2, height / 2]);
-  
+
     path = d3.geo.path().projection(projection);
-  
+
     svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
-  
+
     g = svg.append("g").attr("id", "states");
-  
-    d3.json("/states.json", function(json) {
+
+    d3.json("/competitions/august-2014-college/states.json", function(json) {
       g.selectAll("path").data(json.features).enter().append("path").attr("d", path).attr("class", "state");
       return svg.selectAll(".team").data(players).enter().append("path").attr("d", d3.svg.symbol().type(function(d) {
         var ref;
@@ -232,7 +232,7 @@ are currently playing.
         return "team_location " + d.tags;
       });
     });
-  
+
   }).call(this);
 </script>
 

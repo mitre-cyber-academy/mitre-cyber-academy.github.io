@@ -1,7 +1,7 @@
 <!--
- __  __ ___ _____ ___ ___ 
+ __  __ ___ _____ ___ ___
 |  \/  |_ _|_   _| _ \ __|
-| |\/| || |  | | |   / _| 
+| |\/| || |  | | |   / _|
 |_|  |_|___| |_| |_|_\___|
 -->
 <!DOCTYPE html>
@@ -60,54 +60,54 @@ Efiens (ineligible)
   chartWidth[id] = 940
   style[id] = "timeline"
   interpolate[id] = "cardinal-open"
-  
+
   margin = 17
 </script>
 <div id='timeline'></div>
 <script>
   (function() {
     var area, axis, chart, heightScale, timeScale, xAxis;
-  
+
     axis = true;
-  
+
     if (chartHeight[id] < 100) {
       axis = false;
     }
-  
+
     chartWidth[id] = document.getElementById(id).parentElement.clientWidth;
-  
+
     chart = d3.select("#" + id).append("svg").attr("class", style[id]).attr("width", function() {
       return chartWidth[id] + "px";
     }).attr("height", function() {
       return chartHeight[id] + "px";
     });
-  
+
     heightScale = d3.scale.linear().range([chartHeight[id], 0]).domain([
       d3.max(data[id], function(d) {
         return d["count"];
       }), 0
     ]);
-  
+
     timeScale = d3.time.scale().range([0, chartWidth[id]]).domain(d3.extent(data[id], function(d) {
       return new Date(d["date"]);
     }));
-  
+
     area = d3.svg.area().interpolate(interpolate[id]).x(function(d) {
       return timeScale(new Date(d["date"]));
     }).y0(chartHeight[id]).y1(function(d) {
       return heightScale(d["count"]);
     });
-  
+
     xAxis = d3.svg.axis().scale(timeScale).orient("top");
-  
+
     chart.append("path").datum(data[id].sort(function(a, b) {
       return new Date(a["date"]) - new Date(b["date"]);
     })).attr("class", "data").attr("d", area);
-  
+
     if (axis) {
       chart.append("g").attr("class", "x axis").attr("transform", "translate(0," + chartHeight[id] + ")").call(xAxis);
     }
-  
+
   }).call(this);
 </script>
 
@@ -174,20 +174,20 @@ Seattle Central College
 <script>
   (function() {
     var g, height, path, projection, svg, width;
-  
+
     width = document.getElementById("map").clientWidth;
-  
+
     height = width / 2;
-  
+
     projection = d3.geo.albersUsa().scale(width).translate([width / 2, height / 2]);
-  
+
     path = d3.geo.path().projection(projection);
-  
+
     svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
-  
+
     g = svg.append("g").attr("id", "states");
-  
-    d3.json("/states.json", function(json) {
+
+    d3.json("/competitions/august-2014-college/states.json", function(json) {
       g.selectAll("path").data(json.features).enter().append("path").attr("d", path).attr("class", "state");
       return svg.selectAll(".team").data(players).enter().append("path").attr("d", d3.svg.symbol().type(function(d) {
         var ref;
@@ -208,7 +208,7 @@ Seattle Central College
         return "team_location " + d.tags;
       });
     });
-  
+
   }).call(this);
 </script>
 

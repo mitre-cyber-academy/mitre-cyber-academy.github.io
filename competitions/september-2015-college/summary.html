@@ -1,7 +1,7 @@
 <!--
- __  __ ___ _____ ___ ___ 
+ __  __ ___ _____ ___ ___
 |  \/  |_ _|_   _| _ \ __|
-| |\/| || |  | | |   / _| 
+| |\/| || |  | | |   / _|
 |_|  |_|___| |_| |_|_\___|
 -->
 <!DOCTYPE html>
@@ -51,11 +51,11 @@ Game Summary
     window.highlightOnMap = function(mapSelector, elementSelector) {
       return d3.selectAll(elementSelector).transition().attr("class", "highlighted");
     };
-  
+
     window.unhighlightOnMap = function(mapSelector, elementSelector) {
       return d3.selectAll(elementSelector).transition().delay(250).attr("class", "team_location " + d3.selectAll(elementSelector).attr("tags"));
     };
-  
+
   }).call(this);
 </script>
 <h3 class='muted'>
@@ -165,69 +165,69 @@ Show Score over Time
   chartWidth[id] = 940
   style[id] = "timeline"
   interpolate[id] = "basis"
-  
+
   margin = 17
 </script>
 <div id='timeline'></div>
 <script>
   (function() {
     var area, axis, chart, heightScale, timeScale, xAxis;
-  
+
     axis = true;
-  
+
     if (chartHeight[id] < 100) {
       axis = false;
     }
-  
+
     chartWidth[id] = document.getElementById(id).parentElement.clientWidth;
-  
+
     chart = d3.select("#" + id).append("svg").attr("class", style[id]).attr("width", function() {
       return chartWidth[id] + "px";
     }).attr("height", function() {
       return chartHeight[id] + "px";
     });
-  
+
     heightScale = d3.scale.linear().range([chartHeight[id], 0]).domain([
       d3.max(data[id], function(d) {
         return d["count"];
       }), 0
     ]);
-  
+
     timeScale = d3.time.scale().range([0, chartWidth[id]]).domain(d3.extent(data[id], function(d) {
       return new Date(d["date"]);
     }));
-  
+
     area = d3.svg.area().interpolate(interpolate[id]).x(function(d) {
       return timeScale(new Date(d["date"]));
     }).y0(chartHeight[id]).y1(function(d) {
       return heightScale(d["count"]);
     });
-  
+
     xAxis = d3.svg.axis().scale(timeScale).orient("top");
-  
+
     chart.append("path").datum(data[id].sort(function(a, b) {
       return new Date(a["date"]) - new Date(b["date"]);
     })).attr("class", "data").attr("d", area);
-  
+
     if (axis) {
       chart.append("g").attr("class", "x axis").attr("transform", "translate(0," + chartHeight[id] + ")").call(xAxis);
     }
-  
+
   }).call(this);
 </script>
 
 <script>
   (function() {
     var area, challenges, filterByDate, hour, i, ref, timeSlice, timeSlices;
-  
+
     filterByDate = function(date) {
       return function(el) {
         return new Date(el.updated_at) < date;
       };
     };
-  
+
     timeSlices = [];
-  
+
     for (hour = i = 1, ref = hours; 1 <= ref ? i <= ref : i >= ref; hour = 1 <= ref ? ++i : --i) {
       timeSlice = new Date(start.getTime() + hour * 3600000);
       challenges = solved_challenges.filter(filterByDate(timeSlice));
@@ -239,23 +239,23 @@ Show Score over Time
         })
       });
     }
-  
+
     window.heightScale = d3.scale.linear().range([chartHeight["timeline"], 0]).domain([
       0, d3.max(timeSlices, function(d) {
         return d.points;
       }) * 1.1
     ]);
-  
+
     window.timeSlices = timeSlices;
-  
+
     window.timeScale = d3.time.scale().range([0, chartWidth["timeline"]]).domain([start, new Date(start.getTime() + hours * 3600000)]);
-  
+
     area = d3.svg.area().interpolate("monotone").x(function(d) {
       return timeScale(new Date(d["time"]));
     }).y0(chartHeight[id]).y1(chartHeight[id]);
-  
+
     d3.select("#timeline").select("svg").append("path").datum(timeSlices).attr("d", area).attr("id", "solved_challenges").attr("shown", 0);
-  
+
     window.toggleScoreDisplay = function() {
       var sd;
       sd = d3.select("#solved_challenges");
@@ -273,7 +273,7 @@ Show Score over Time
         return d3.select("#scoreToggle").text("Show Score over Time");
       }
     };
-  
+
   }).call(this);
 </script>
 </div>
@@ -1064,20 +1064,20 @@ are currently playing.
 <script>
   (function() {
     var g, height, path, projection, svg, width;
-  
+
     width = document.getElementById("map").clientWidth;
-  
+
     height = width / 2;
-  
+
     projection = d3.geo.albersUsa().scale(width).translate([width / 2, height / 2]);
-  
+
     path = d3.geo.path().projection(projection);
-  
+
     svg = d3.select("#map").append("svg").attr("width", width).attr("height", height);
-  
+
     g = svg.append("g").attr("id", "states");
-  
-    d3.json("/states.json", function(json) {
+
+    d3.json("/competitions/august-2014-college/states.json", function(json) {
       g.selectAll("path").data(json.features).enter().append("path").attr("d", path).attr("class", "state");
       return svg.selectAll(".team").data(players).enter().append("path").attr("d", d3.svg.symbol().type(function(d) {
         var ref;
@@ -1098,7 +1098,7 @@ are currently playing.
         return "team_location " + d.tags;
       });
     });
-  
+
   }).call(this);
 </script>
 
