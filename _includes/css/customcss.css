@@ -162,35 +162,35 @@
 	background-repeat:no-repeat;
 	padding: 50px 50px 40px 60px;
 	background-size: auto 110px;
-	width:100px;	
+	width:100px;
 }
 .a-corporate-corporate {
 	background-image:url('../img/corporate-white.png');
 	background-repeat:no-repeat;
 	padding: 50px 50px 40px 60px;
 	background-size: auto 110px;
-	width:100px;	
+	width:100px;
 }
 .a-mobile-head {
 	background-image:url('../img/mobile-orig-white.png');
 	background-repeat:no-repeat;
 	padding: 50px 50px 40px 60px;
 	background-size: auto 110px;
-	width:100px;	
+	width:100px;
 }
 .a-pencil-head {
 	background-image:url('../img/pencil-white.png');
 	background-repeat:no-repeat;
 	padding: 50px 50px 40px 60px;
 	background-size: auto 110px;
-	width:100px;	
+	width:100px;
 }
 .a-hack-head {
 	background-image:url('../img/hack-white.png');
 	background-repeat:no-repeat;
 	padding: 50px 50px 40px 60px;
 	background-size: auto 110px;
-	width:100px;	
+	width:100px;
 }
 .breadcrumb {
 	text-align:left;
@@ -293,7 +293,7 @@
 	color: #5A5A5A;
 	font-weight: normal;
 	font-size: 28px;
-	border-bottom: 1px solid #EEE;	
+	border-bottom: 1px solid #EEE;
 }
 .centerbutton {
 	display:inline-block;
@@ -302,11 +302,11 @@
 {
   text-align: center !important;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 .directions h3 {
 	font-weight:normal;
-	color: #5A5A5A;	
+	color: #5A5A5A;
 }
 .directions {
 	padding-left:10px;
@@ -364,7 +364,7 @@
 }
 #contactform button {
 	margin:2px 0 20px 10px;
-	
+
 }
 #contactform input,select,textarea{
 	padding:4px 2px;
