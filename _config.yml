@@ -2,3 +2,4 @@ relative_permalinks: false
 plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
+exclude: [vendor]
