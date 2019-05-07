@@ -35,3 +35,6 @@ This repository is for the website for the MITRE Cyber Academy.
 	bundle install --path vendor/bundle
 	bundle exec jekyll server
 
+### Or with Docker :D
+    
+    docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve
