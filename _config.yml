@@ -1,4 +1,5 @@
 relative_permalinks: false
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
+exclude: [vendor]

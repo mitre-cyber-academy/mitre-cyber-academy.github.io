@@ -23,3 +23,18 @@ This repository is for the website for the MITRE Cyber Academy.
 5. Run the git add and commit commands. Please make sure your commit messages are descriptive.
 6. Run ```git push origin master```
 7. Submit a pull request
+
+### On a fresh install of Ubuntu Xenial 16.04 LTS
+
+	sudo apt install ruby
+	sudo apt install rbenv
+	sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev
+	export PATH=$PATH:/home/<username>/.gem/ruby/<ruby version>/bin/
+	gem install --user-install bundle
+	echo 'exclude: [vendor]' >> _config.yml # (https://stackoverflow.com/questions/39057405/unable-to-build-a-jekyll-site-invalid-date)
+	bundle install --path vendor/bundle
+	bundle exec jekyll server
+
+### Or with Docker :D
+    
+    docker run -p 8080:4000 -v $(pwd):/site bretfisher/jekyll-serve

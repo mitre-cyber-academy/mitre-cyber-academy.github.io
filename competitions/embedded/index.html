@@ -2,7 +2,7 @@
 layout: default
 title: MITRE Cyber Academy | Embedded 
 ---
-<div class="jumbotron masthead" id="subpage">
+<div class="jumbotron masthead" id="subpage" style="background-image:url('../../img/ectfheader.jpg'); height:500px; background-size: cover; background-repeat: no-repeat; background-position: center center;">
     <div class="container">
         <ul class="breadcrumb">
             <li><a href="/">Home</a> <span class="divider">/</span></li>
@@ -10,52 +10,149 @@ title: MITRE Cyber Academy | Embedded
             <li class="active">Embedded Systems</li>
         </ul>
     </div>
+    <br>
     <div class="container" id="subpage-padding">
-        <div class="bigheader pull-right a-attack-head">
+        <br>
+        <div class="bigheader pull-right">
             &nbsp;
         </div>
-        <h1>eCTF</h1>
-        <p>An attack-and-defend exercise for designing secure embedded systems.</p>
+        <h1 style="font-size: 5em; text-shadow: 1px 1px 0px #000;">Embedded Capture the Flag</h1>
+        <p style="text-shadow: 1px 1px 0px #000;">An attack-and-defend exercise for designing secure embedded systems</p>
     </div>
 </div>
 <div class="colored-divider"></div>
 <div class="container">
-    <div class="maincontent row-fluid top-border">
-        <p>Learn about the MITRE Embedded System CTF</p>
-    </div>
-    <h3 class="sectionheader">Collegiate eCTF 2017</h3>
+    <h2 class="sectionheader">2020 eCTF registration is now open!</h2>
     <div class="maincontent row-fluid">
         <div class="row-fluid">
-            <div class="span6">
-                <h5>Overview</h5>
-                <p>MITRE's 2nd collegiate eCTF (embedded capture-the-flag) is an embedded security competition that puts participants through the experience of trying to create a secure system and then learning from their mistakes. The main target is a real <b>physical</b> embedded device, which opens the scope of the challenge to include physical/proximal access attacks. As a pilot competition, participation in this event is invitation only.  If you're interested in participating in eCTF events, please contact us at <a href="mailto:ectf@mitre.org">ectf@mitre.org</a></p>
+                <p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScg-YNZpmNXPs2JhTM4zzNDHS3gZzSB_jblBm-kwJzTTDdRag/viewform?vc=0&c=0&w=1&usp=mail_form_link">eCTF 2020 Registration Form</a><br>
 
-                <h5>References for Participants</h5>
-                <p><ul><li><a href='ectf_challenge17_v2.0.pdf'>Challenge Description and Rules</a> <b>Updated! 2/28/2017</b></li>
-                <li><a href='https://github.com/mitre-cyber-academy/2017-ectf-insecure-example'>Example Code</a></li>
-                <li>External References
+                    For any specific questions or to join our mailing list, please email <a href="mailto:ectf@mitre.org">ectf@mitre.org</a>
+                </p>
+                <hr>
+                <h2>Overview</h2>
+                <p>
+                    MITRE's eCTF (<b>embedded</b> capture-the-flag) is an embedded security competition that puts participants through the experience of trying to create a secure system and then learning from their mistakes. The main target is a real <b>physical</b> embedded device, which opens the scope of the challenge to include physical/proximal access attacks.  The eCTF is a two-phase competition with attack and defense components.  In the first phase, competitors design and implement a secure system based on a set of challenge requirements.  The second phase involves analyzing and attacking the other teams’ designs. 
+                </p>
+
+                <hr>
+                <h2>FAQ</h2>    
+                <h5> How is this different from other Capture the Flag (CTF) competitions?</h5>
+                <p>
+                    The eCTF is unique in two major ways. First, the focus is on securing embedded systems, which present an entirely new set of challenges and security issues that are not currently covered by traditional “online” CTFs. Second, this event balances offense and defense by including a significant secure-design phase in addition to an attack phase. This competition will help you develop practical skills that can be applied securing critical systems, such as medical devices, smart grids, IoT devices, and mobile devices.
+                <p>
+                <h5>How does it work?</h5>
+                <p>This event puts competitors through the exercise of trying to create a secure system and then learning from their mistakes. The main target is a real physical embedded device, opening the challenge to include physical/proximal access attacks.</p>
+                
+                <div style="margin-left: 1em;">
+                    <p>
+                    <b>Secure Design</b> &#9472; Teams design a secure system that meets all the challenge requirements.
+                    </p>
+                    <p>
+                    <b>Handoff</b> &#9472; MITRE verifies that each submitted system has met all functional requirements. MITRE posts designs for all teams to evaluate during the attack phase.
+                    </p>
+                
+                    <p>
+                    <b>Attack</b> &#9472; Teams perform security evaluations of opposing teams’ systems and request provisionedchips for vulnerable systems. Points are awarded for flags retrieved from successful attacks.
+                    </p>
+                </div>
+
+                <h5>What is this year’s challenge?</h5>
+                <p>
+                    Teams will design a secure audio digital rights management (DRM) module for a next-generation multimedia player on the Digilent Cora Z7. The system must be secure to prevent users from playing pirated music, support region locking, and prevent the creation of cloned bootleg players.
+                </p>
+
+                <h5>Who can participate?</h5>
+                <p>
+                    Anyone! Students at all academic levels are welcome to participate. Team sizes are unlimited (although a minimum of 4 students is recommended). Sponsorship of a faculty member is preferred.
+                </p>
+
+                <h5>Do I need to travel for the competition?</h5>
+                <p>
+                    The competition can be done 100% remotely. MITRE will ship all required hardware to the teams at the start of the competition and development can be done directly on your college campus. Once teams have a completed design, they submit the code to MITRE for testing and MITRE will ensure that all challenge requirements are met. Once this verification process is completed, the source code and compiled binaries will be provided to all of the attacking teams.
+                </p>
+                <p>Once the competition concludes, MITRE hosts an award ceremony where teams are invited to share in their accomplishments, meet participants from other schools, interact with MITRE staff, and see the final standings revealed!</p>
+
+                <h5>Can I earn college credits?</h5>
+                <p>
+                    Work with your professor(s) / faculty advisor to determine how to earn credit at your institution. Most students can earn college credit hours. Remember that this is a significant time commitment, typically commensurate with the credit hours you may receive.
+                </p>
+
+                <h5>What is provided by MITRE to help?</h5>
+                <p>
+                    MITRE provides teams with a reference implementation, embedded hardware, and technical guidance throughout the competition.
+                </p>
+
+                <h5>Are there awards?</h5>
+                <p>
+                    Winning teams receive a cash prize, publicity from MITRE, and typically earn accolades from their university as well. Students have used their participation in eCTF to build resumes, present at conferences, and open the door to valuable internship and career opportunities, including engineering positions at MITRE.
+                </p>
+
+                <h5>Questions?</h5>
+                <p>Please contact the MITRE eCTF team at <a href="mailto:ectf@mitre.org">ectf@mitre.org</a></p>
+                <br>
+                <hr>
+
+                <h2>Previous Competitions:</h2>
+                <p><a href='../ectf-2019/ectf19desc.html'>Collegiate eCTF 2019</a>
+                <ul>
+                   <li><b>First Place Overall:</b>  DeNUvo -- <i>Northeastern University, advised by Guevara Noubir</i> -- <a href='student_presentations/neu.pdf'>[presentation]</a></li>
+                   <li><b>Second Place Overall:</b> ROP it like its hot -- <i>Carnegie Mellon University, advised by Martin Carlisle</i> -- <a href='student_presentations/cmu.pdf'>[presentation]</a></li>
+                   <li><b>Two-way tie for Third Place Overall:</b><br></li>
                     <ul>
-                    <li><a href='http://www.atmel.com/products/microcontrollers/avr/default.aspx?tab=documents&Asset_Type=020%20Application%20Note'>Atmel Application Notes</a></li>
-                    <li><a href='http://www.atmel.com/Images/doc2589.pdf'>AVR231 - AES Bootloader Documentation</a></li>
-                    <li><a href='http://www.atmel.com/images/AVR231.zip'>AVR231 - AES Bootloader Source Code</a></li>
-                    <li><a href='http://www.engineersgarage.com/embedded/avr-microcontroller-projects/How-To-Write-a-Simple-Bootloader-For-AVR-In-C-language'>How to Write a Simple Bootloader for AVR in C</a></li>
-                    <li><a href='http://www.avrfreaks.net/forum/faq-c-writing-bootloader-faq?page=all'>Writing a Bootloader FAQ</a></li>
+                        <li>ZOO_MES -- <i>University of Massachusetts, advised by Wayne Burleson</i> -- <a href='student_presentations/umass.pdf'>[presentation]</a></li>
+                        <li>TigerBytes -- <i>Rochester Institute of Technology, advised by Ziming Zhao and Marcin &#0321;ukowiak</i> -- <a href='student_presentations/rit.pdf'>[presentation]</a></li>
                     </ul>
-                </li>
+                   <li><b>Additional Awards:</b></li>
+                   <ul>
+                    <li>0Day Award:</b> ROP it like its hot -- <i>Carnegie Mellon University, advised by Martin Carlisle</i></li>
+                    <li>Iron Flag:</b> DeNUvo -- <i>Northeastern University, advised by Guevara Noubir</i></li>
+                    <li>Best Writeup:</b> ROP it like its hot -- <i>Carnegie Mellon University, advised by Martin Carlisle</i></li>
+                    <li>Best Documentation:</b> DeNUvo -- <i>Northeastern University, advised by Guevara Noubir</i></li>
+                    <li>Tech Support Hero:</b> ZOO_MES -- <i>University of Massachusetts, advised by Wayne Burleson</i></li>
+                   </ul>
                 </ul>
                 </p>
-                <h5>Schedule</h5>
-                <p>
-                <i>2017.01.18</i>:&nbsp; Start eCTF<br>
-                <i>2017.03.01</i>:&nbsp; System handoff. Secure designs are due<br>
-                <i>2017.04.14</i>:&nbsp; Competition concludes<br>
-                <i>2017.04.20</i>:&nbsp; Award ceremony and debrief<br>
-                </p>
-                <h5>Questions?</h5>
-                <p>Contact <a href="mailto:ectf@mitre.org">ectf@mitre.org</a></p>
 
-                <h5>Past competitions</h5>
+                <p><a href='../ectf-2018/ectf18desc.html'>Collegiate eCTF 2018</a>
+                <ul>
+                   <li><b>First Place Overall:</b>  Hokie Hackers --<i>Virginia Tech, advised by Matthew Hicks and Patrick Schaumont</i></li>
+                   <li><b>Second Place Overall:</b>  Anonymous Elephants --<i>Tufts University, advised by Ming Chow</i></li>
+                   <li><b>Third Place Overall:</b>  VuPenn --<i>University of Pennsylvania, advised by James Weimer</i></li>
+                   <li><b>Additional Awards:</b></li>
+                   <ul>
+                    <li>First To Market:</b> TechSec --<i>MIT</i></li>
+                    <li>Iron Flag 1:</b> HokieHackers --<i>Virginia Tech, advised by Matthew Hicks and Patrick Schaumont</i></li>
+                    <li>Iron Flag 2:</b> 0xbu --<i>Boston University, advised by Renato Mancuso</i></li>
+                    <li>Golden Flag:</b> VuPenn --<i>University of Pennsylvania, advised by James Weimer</i></li>
+                    <li>Flag Factory:</b> HokieHackers --<i>Virginia Tech, advised by Matthew Hicks and Patrick Schaumont</i></li>
+                    <li>Best Documentation:</b> Nullify --<i>University of Nebraska, Omaha, advised by Bill Mahoney</i></li>
+                    <li>Best Writeup:</b> Anonymous Elephants --<i>Tufts University, advised by Ming Chow</i></li>
+                   </ul>
+                </ul>
+                </p>
+                
+
+                <p><a href='../ectf-2017/ectf17desc.html'>Collegiate eCTF 2017</a>
+                <ul>
+                   <li><b>First Place Overall:</b>  Firmware Dogs --<i>University of Connecticut, advised by John Chandy</i></li>
+                      <li><b>Mass Attack Winner:</b>  Team Sprite --<i>Northeastern University, advised by Guevara Noubir</i></li>
+                   <li><b>Iron Flag Winners:</b></li>
+                   <ul><li>Firmware Dogs --<i>University of Connecticut, advised by John Chandy</i></li>
+                      <li>pgm_read_flag() --<i>Carnegie Mellon University, advised by Martin Carlisle</i></li>
+                      <li>Snorlax --<i>University of Massachusetts- Amherst, advised by Dan Holcomb</i></li>
+                   </ul>
+                </ul>
+                </p>
+
                 <p><a href='../ectf-2016/ectf16desc.html'>Collegiate eCTF 2016</a></p>
+                <ul>
+                   <li><b>First Place Overall:</b> We're Probably Insecure --<i>Worcester Polytechnic Institute, advised by Thomas Eisenbarth</i></li>
+                   <li><b>Most Flag Points:</b> WillHax4Snacks --<i>Northeastern University, advised by Yunsi Fei</i></li>
+                   <li><b>Iron Flag:</b> Tufts eCTF --<i>Tufts University, advised by Ming Chow</i></li>
+                </ul>
+
             </div>
         </div>
     </div>
