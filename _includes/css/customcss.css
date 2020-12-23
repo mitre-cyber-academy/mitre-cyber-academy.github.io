@@ -3,7 +3,7 @@
   font-family: Helvetica, Verdana, Arial !important;
 }
  a {
-   color: #5d8cb6;
+   color: #005b94;
    text-decoration: none;
  }
  a:hover,
@@ -14,20 +14,8 @@
  .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5580a6;
-  background-image: -moz-linear-gradient(top, #5d8cb6, #4a6e8e);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5d8cb6), to(#4a6e8e));
-  background-image: -webkit-linear-gradient(top, #5d8cb6, #4a6e8e);
-  background-image: -o-linear-gradient(top, #5d8cb6, #4a6e8e);
-  background-image: linear-gradient(to bottom, #5d8cb6, #4a6e8e);
+  background-color: #005b94;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5d8cb6', endColorstr='#ff4a6e8e', GradientType=0);
-  border-color: #4a6e8e #4a6e8e #30475c;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #4a6e8e;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -271,7 +259,7 @@
 	border-bottom: 1px solid #EEE;
 }
 .colored-divider {
-  background-color: #b8d12f;
+  background-color: #fff601;
   min-height:20px;
   margin-bottom:20px;
 }
@@ -439,11 +427,11 @@
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
   background: #476988; /* Old browsers */
   background: rgb(71, 105, 136);
-  background: -moz-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: -webkit-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: -o-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: -ms-linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
-  background: linear-gradient(0deg, rgb(68, 101, 130) 30%, rgb(93, 140, 182) 70%);
+  background: -moz-linear-gradient(0deg, rgb(13, 47, 79) 30%, rgb(0, 91, 148) 70%);
+  background: -webkit-linear-gradient(0deg, rgb(13, 47, 79) 30%, rgb(0, 91, 148) 70%);
+  background: -o-linear-gradient(0deg, rgb(13, 47, 79) 30%, rgb(0, 91, 148) 70%);
+  background: -ms-linear-gradient(0deg, rgb(13, 47, 79) 30%, rgb(0, 91, 148) 70%);
+  background: linear-gradient(0deg, rgb(13, 47, 79) 30%, rgb(0, 91, 148) 70%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#446582', endColorstr='#5D8CB6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
      -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
