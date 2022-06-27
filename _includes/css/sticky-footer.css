@@ -1,6 +1,4 @@
-﻿.class {
-}
-
+﻿
 html {
     min-height: 100%;
     position: relative;
@@ -10,6 +8,7 @@ body {
     max-height: 100%;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
+    
 }
 
 .well {
@@ -22,4 +21,20 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+.fa-github:hover {
+    color: #000000;
+}
+  
+.fa-facebook:hover {
+    color: #1773EA;
+}
+  
+.fa-instagram:hover {
+    color: #B32E87;
+}
+  
+.fa-twitter:hover {
+    color: #1C9CEA;
 }
