@@ -7,51 +7,91 @@
         <meta name="description" content="MITRE Cyber Academy Frontpage">
         <meta name="author" content="MCA Staff">
         <title>{{ page.title }}</title>
-        <link href="{{ site.github.url }}/css/main.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="{{ site.github.url }}/img/favicon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-        <!--[if IE 7]>
-        <link rel="stylesheet" href="{{ site.baseurl }}css/font-awesome-ie7.min.css">
-        <![endif]-->
-        <!-- Scripts START -->
-        <script src="{{ site.github.url }}/js/jquery-1.7.2.min.js"></script>
-        <script src="{{ site.github.url }}/js/bootstrap.min.js"></script>
-        <script src="{{ site.github.url }}/js/sticky-footer.js"></script>
-        <!-- Scripts END-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+            <link href="{{ site.github.url }}/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous" />
+
         {% seo %}
     </head>
 <body>
-    <div class="navbar navbar-fixed-top navbar-inverse">
-        <div class="navbar-inner">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    <header>
+
+        <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="/">MITRE Cyber Academy</a>
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li><a href="/about"><i class="icon-info-sign icon-white"></i> About</a></li>
-                        <li><a href="/contact"><i class="icon-globe icon-white"></i> Contact</a></li>
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">Resources</h4>
+                    <ul class="navbar-nav me-auto mb-2 text-white">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/learn">Learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/practice">Practice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/competitions">Compete</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.mitre.org/careers/student-programs">Student Opportunities</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="col-sm-4 py-4">
+                    <h4 class="text-white">Info</h4>
+                    <ul class="navbar-nav me-auto mb-2 text-white">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
                 </div>
             </div>
         </div>
     </div>
-    {{ content }}
-    <div class="well footer" id="page-footer">
+    <div class="navbar navbar-dark bg-dark ">
         <div class="container">
-            <div class="row-fluid">
-                <p class="pull-right"><a href="#">Back to top</a></p>
-                <p><a href="https://www.mitre.org">MITRE</a> Cyber Academy | <a href="/terms-of-service">Terms of Service</a></p>
-                <p class = "pull-right"><a href="https://github.com/mitre-cyber-academy" target="_blank"><i class = "fab fa-github fa-2x"></i></a>
-                    <a href="https://www.facebook.com/MITREcorp/" target="_blank"><i class = "fab fa-facebook fa-2x"></i></a>
-                    <a href="https://www.instagram.com/accounts/login/?next=/mitre.corp/" target="_blank"><i class = "fab fa-instagram fa-2x"></i></a>
-                    <a href="https://twitter.com/MITREcorp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class = "fab fa-twitter fa-2x"></i></a>
-                    <p>Copyright &copy 2021 The MITRE Corporation</p>
-                </p>
+            <a href="/" class="navbar-brand" style = " margin-left: 0 !important;" >
+                <strong>MITRE Cyber Academy</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    </div>
+</header>
+    {{ content }}
+    <div class="bg-dark">
+
+        <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <div class="col-md-4 mb-0 text-white"><a href="https://www.mitre.org">MITRE</a> Cyber Academy | <a href="/terms-of-service">Terms of Service</a></div>
+
+                <div href="/"
+                    class="col-md-4 d-flex align-items-center mb-3 mb-md-0 text-decoration-none text-white">
+                    Copyright &copy 2022 The MITRE Corporation
             </div>
+                <div>
+
+                    <a href="https://github.com/mitre-cyber-academy" target="_blank" class = "px-2" id = "footer_icons"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.facebook.com/MITREcorp/" target="_blank" class = "px-2" id = "footer_icons"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=/mitre.corp/" target="_blank" class = "px-2" id = "footer_icons"><i
+                        class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://twitter.com/MITREcorp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank" class = "px-2" id = "footer_icons"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+            </footer>
         </div>
     </div>
 
