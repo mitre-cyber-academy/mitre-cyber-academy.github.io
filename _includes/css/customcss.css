@@ -1,6 +1,6 @@
-#background-color{
-    /*background:linear-gradient(45deg, black, #047aed);*/
-    background: linear-gradient(-45deg, #003366, #1091d6);
+#background-color {
+	/*background:linear-gradient(45deg, black, #047aed);*/
+	background: linear-gradient(-45deg, #003366, #1091d6);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100%;
@@ -10,63 +10,73 @@
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
 }
 
 .fa-github:hover {
-    color: #000000;
+	color: #000000;
 }
-  
+
 .fa-facebook:hover {
-    color: #1773EA;
+	color: #1773EA;
 }
-  
+
 .fa-instagram:hover {
-    color: #B32E87;
+	color: #B32E87;
 }
-  
+
 .fa-twitter:hover {
-    color: #1C9CEA;
+	color: #1C9CEA;
 }
 
-#footer_icons{
-    text-decoration: none;
-    color: #fff;
+#footer_icons {
+	text-decoration: none;
+	color: #fff;
 }
 
-#mitre-blue{
-    background: #005B94;
+#mitre-blue {
+	background: #005B94;
 }
 
-.btn-primary{
+.btn-primary {
 	background: #005B94;
 
 }
 
-#card-align{
+#card-align {
 	display: flex;
 	flex-direction: column;
 }
 
-#btn-card-align{
+#btn-card-align {
 	margin-top: auto;
 }
 
-#card-even-spacing{
+#card-even-spacing {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 }
-#card-center-spacing{
+
+#card-center-spacing {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
 body {
 	font-family: Helvetica, Verdana, Arial !important;
-  }
+}
+
+#footer-padding {
+	padding-top: 16px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
