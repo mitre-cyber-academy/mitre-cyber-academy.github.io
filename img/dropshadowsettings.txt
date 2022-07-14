@@ -1,5 +1,0 @@
-Offset X: 0
-Offset Y: 2
-Widening Radius: 0
-Blur Radius: 2
-Shadow Opacity: 153
