@@ -72,12 +72,13 @@
 
 body {
 	font-family: Helvetica, Verdana, Arial !important;
-	height:100vh; 
-	margin:0;
-	display:flex; 
-	flex-direction:column; 
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
-footer{
+
+footer {
 	margin-top: auto;
 }
 
@@ -87,7 +88,7 @@ footer{
 	padding-right: 0px;
 }
 
-#vid-divider{
+#vid-divider {
 	border-bottom: #EEE;
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
