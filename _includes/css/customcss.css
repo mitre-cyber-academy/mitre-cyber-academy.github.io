@@ -86,3 +86,10 @@ footer{
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
+#vid-divider{
+	border-bottom: #EEE;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	margin-bottom: 20px;
+}
